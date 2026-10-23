@@ -1,0 +1,10 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: self-healing-app
+  namespace: self-healing
+spec:
+  minAvailable: 2                  # voluntary disruptions (drains) never drop below 2 pods
+  selector:
+    matchLabels:
+      app: self-healing-app

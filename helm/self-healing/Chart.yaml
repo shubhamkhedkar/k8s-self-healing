@@ -1,0 +1,6 @@
+apiVersion: v2
+name: self-healing
+description: Kubernetes self-healing demo app (probes, replicas, PDB, HPA)
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
